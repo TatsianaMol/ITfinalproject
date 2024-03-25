@@ -1,0 +1,210 @@
+
+body {
+   background:url(../images/avaaboutus.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 0;
+   margin: 0;
+
+}
+
+.parent {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.block {
+   background: #f2f2f2;
+   width: 70%;
+   height: 70%;
+   display: flex;
+   align-items: center;
+}
+.elemm{
+   width: 50%;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+.block_1{
+   background-color: black;
+   padding: 15px;
+   
+}
+.img_malo{
+   width:250px;
+   height:90px;
+}
+
+
+.direct{
+   width: 50px;
+   height: 50px;
+   float: right;
+   margin-top: 10px;
+   z-index: 10;
+   position: relative;
+}
+
+
+
+
+/* block2 */
+
+.block_parent_2{
+   display: none;
+}
+.parent2 {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   overflow: auto;
+}
+
+.block2 {
+   background: #f2f2f2;
+   width: 70%;
+   height: 70%;
+   display: flex;
+   align-items: center;
+}
+.elemm2{
+   width: 50%;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.block_4{
+   background-color: black;
+   padding: 15px;
+   
+}
+
+.textaboutus{
+   text-align: justify;
+   text-indent: 20px;
+}
+
+@media (min-width:260px) and (max-width:481px) {
+   
+   .textaboutus{
+      font-size: 9px;
+      margin: 3px 5px;
+   }
+   .block{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .img_malo{
+      width:150px;
+      height:50px;
+   }
+
+   .elemm{
+      width: 90%;
+      padding-left: none;
+      padding-right: none;
+   }
+   .elemm2{
+      width: 90%;
+      padding-left: none;
+      padding-right: none;
+   }
+
+   .block2{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .elem:nth-child(1){
+      margin-left: 15px;
+   }
+}
+
+
+@media (min-width:482px) and (max-width:768px){
+   .textaboutus{
+      font-size: 11px;
+   }
+   .block{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .img_malo{
+      width:200px;
+      height:60px;
+   }
+
+   .elemm{
+      width: 80%;
+      padding-left: none;
+      padding-right: none;
+   }
+   .elemm2{
+      width: 80%;
+      padding-left: none;
+      padding-right: none;
+   }
+
+   .block2{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .elem:nth-child(1){
+      margin-left: 15px;
+   }
+   
+}
+
+
+@media (min-width: 769px) and (max-width:1150px){
+   .textaboutus{
+      font-size: 13px;
+   }
+   .block{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .img_malo{
+      width:250px;
+      height:70px;
+   }
+
+   .elemm{
+      width: 80%;
+      padding-left: none;
+      padding-right: none;
+   }
+   .elemm2{
+      width: 80%;
+      padding-left: none;
+      padding-right: none;
+   }
+
+   .block2{
+      flex-direction: column;
+      justify-content: center;
+      
+   }
+
+   .block_1{
+      padding-right:2px;
+   }
+
+}

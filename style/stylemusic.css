@@ -1,0 +1,125 @@
+body {
+   background:url(../images/music1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 0;
+   margin: 0;
+}
+
+.musicbox{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 20px;
+   justify-content: center;
+}
+.mitem{
+   border: 3px solid black;
+   padding: 10px;
+   position: relative;
+   opacity: 1;
+   transition: all 0.4s ease-in-out 0.3s;
+}
+
+.mitem:hover .play_img{
+   opacity: 1;
+}
+
+.mitem:hover{
+   opacity: 0.5;
+}
+
+.play_img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: all 0.4s ease-in-out 0.3s;
+   background-color: aliceblue;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.musicall{
+   width: 450px;
+   height:400px;
+}
+
+@media (min-width:150px) and (max-width:481px) {
+   .musicall{
+      width: 250px;
+      height:200px;
+   }
+  
+}
+
+@media (min-width:482px) and (max-width:768px){
+   .musicall{
+      width: 350px;
+      height:300px;
+   }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

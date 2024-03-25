@@ -1,0 +1,88 @@
+/* all elem*/
+*,
+*:before
+*:after {
+   box-sizing:border-box;
+}
+
+/*ссылки внизу*/
+
+.footer{
+   background-color: #000101;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+}
+
+.ul_downfooter{
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   justify-content:space-around;
+   color: white;
+   font-size:14px;
+   height: 45px;
+}
+
+
+
+.img_link{
+   background-color: aliceblue;
+   border-radius: 45%;
+   width:30px;
+   height:30px;
+}
+.img_link:hover {
+   background-color:#2AB3E2;
+}
+
+
+.direct_back{
+   width: 50px;
+   height: 50px;
+   float: left;
+   margin-top: 10px;
+   z-index: 10;
+   position:fixed;
+   padding-left: 10px;
+}
+
+.img_arrow{
+   background-color: white;
+   padding: 1px;
+   border-radius: 50%;
+  
+}
+.img_arrow:hover{
+   background-color: #2AB3E2;
+}
+.elem_text{
+   font-size:20px;
+}
+
+
+
+@media (min-width:250px) and (max-width:481px){
+   .img_link{
+      width:20px;
+      height:20px;
+      margin-right:5px;
+   }
+   .elem_text{
+      font-size:10px;
+   }
+   
+}
+
+@media (min-width:482px) and (max-width:768px){
+   .img_link{
+      width:30px;
+      height:30px;
+   }
+   .elem_text{
+      font-size: 15px;
+   }
+}
+
+
+ 

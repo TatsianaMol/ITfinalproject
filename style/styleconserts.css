@@ -1,0 +1,225 @@
+body {
+   background:url(../images/music6.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 0;
+   margin: 0;
+}
+
+
+.container_3 {
+   display: flex;
+   list-style: none;
+   justify-content: space-around;
+   height:500px;
+   padding-top: 10%;
+}
+
+.item-3 {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   border: 0.5px solid rgb(21, 20, 20);
+   background-color:#000000;
+}
+
+li .data {
+   font-size: 32px;
+   color: rgb(222, 222, 222);
+   text-align: center;
+   padding-top: 30px;
+   font-style: italic;
+}
+
+li .data:hover {
+   color: rgb(245, 245, 245);
+   font-weight:900;
+}
+.item-3:hover{
+   background-color: #012b67;
+   border-radius: 50%;
+}
+
+/*организация концерта*/
+
+.footer_org{
+   color: white;
+   padding: 10px;
+   text-align: center;
+   font-size: 18px;
+}
+footer{
+   background-color: rgb(21, 20, 20, 0.6);
+   margin-top: 100px;
+}
+
+.footer_2{
+   display: flex;
+   justify-content: space-around;
+   margin: 0 20px 0 0;
+
+   
+}
+
+.item_f2{
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.animation{
+   display: flex;
+}
+
+
+.form_1 input, .form_1 textarea{
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #c2d0e0;
+   line-height: 30px;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+   resize:none;
+}
+
+.form_1 input[type="submit"]{
+   background: rgb(212, 172, 62);
+   border-bottom: 4px solid rgb(212, 172, 62);
+   color: black;
+   font-size: 16px;
+}
+.item_f2-1{
+   margin: 15px;
+}
+
+label{
+   color: #c0c7cf;
+}
+
+/* для формы */
+ .invalid {
+   border-color: red;
+}
+.div{
+   position: relative;
+}
+.span{ 
+   position: absolute;
+   color: rgb(177, 16, 16);
+   top: 50px;
+   font-size: 13px;
+} 
+
+.foto{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   max-width: 300px;
+}
+
+.foto>img{
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   transition: all 500ms ease;
+}
+
+.foto:hover>img:not(:hover){
+   border-radius: 5px;
+   scale: 0.9;
+   opacity: 0.5;
+}
+@media (min-width:260px) and (max-width:481px) {
+   .container_3{
+      flex-direction: column;
+      padding-top: 2%;
+      align-items: center;
+   }
+
+   .item-3{
+      width: 150px;
+      height: 150px;
+   }
+
+   li .data {
+      font-size: 20px;
+      padding-top: 15px;
+
+   }
+
+   .item_f2-1{
+      margin: 1px;
+   }
+   .form_1 input, .form_1 textarea{
+      width: 80%;
+      background: #c0c7cf;
+   }
+
+   .footer_2{
+      flex-direction: column;
+      
+   }
+   .foto{
+      display: none;
+   }
+   .item_f2{
+      justify-content: space-around;
+      margin-top: 20px;
+   }
+
+   .footer_2{
+      margin: 0 15px;
+   }
+
+   .form_1{
+     display: grid; 
+    /*  grid-template-columns:  repeat(1, 1fr); */
+     align-items: center;
+     justify-content: center;
+  
+   }
+}
+
+
+@media (min-width:482px) and (max-width:768px){
+   .container_3{
+   flex-direction: column;
+   padding-top: 2%;
+   align-items: center;
+   }
+
+   .item-3{
+   width: 180px;
+   height: 180px;
+   }
+
+   li .data {
+   font-size: 25px;
+   padding-top: 15px;
+   }
+
+   .item_f2{
+      flex-direction: column;
+      margin-left: 50px;
+   }
+   .foto{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   div .slader{
+      display: none;
+   }
+
+   .footer_2{
+      margin: 0 15px 15px 15px;
+   }
+
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+   .item_f2{
+      flex-direction: column;
+      margin-left: 50px;
+   }
+
+}
